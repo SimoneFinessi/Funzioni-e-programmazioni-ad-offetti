@@ -22,3 +22,8 @@ print(maggiore3(1,2,3))#codice poco funzionale perche troppo lungo
 def maggiore2(a=0,b=0,c=0):
     return maggiore(maggiore(a,b),c)
 print(maggiore2(int(input("inserisci il primo numero")),int(input("inserisci il secondo numero")),int(input("inserisci il terzo numero"))))
+
+#max fra 4 valori
+def maggiore4(a=0,b=0,c=0,d=0):
+    return maggiore(maggiore(maggiore(a,b),c),d)
+print(maggiore4(1,2,7,4))

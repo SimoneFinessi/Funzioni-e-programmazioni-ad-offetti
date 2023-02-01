@@ -27,3 +27,11 @@ print(maggiore2(int(input("inserisci il primo numero")),int(input("inserisci il 
 def maggiore4(a=0,b=0,c=0,d=0):
     return maggiore(maggiore(maggiore(a,b),c),d)
 print(maggiore4(1,2,7,4))
+
+def maggiore4_2(a=0,b=0,c=0,d=0):
+    return maggiore(maggiore2(a,b,c),d)#metodo migliore
+print(maggiore4(1,2,12,4))
+
+def maggiore4_3(a=0,b=0,c=0,d=0):
+    return maggiore(maggiore2(a,b),maggiore(c,d))#altro metodo
+print(maggiore4(1,2,12,4))

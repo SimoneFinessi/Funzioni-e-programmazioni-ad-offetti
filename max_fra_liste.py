@@ -1,3 +1,4 @@
+#tro are il massimo numero in una lista usando una funzione senza il comando max()
 def maxliste(a=0):
     massimo=0
     for i in a:

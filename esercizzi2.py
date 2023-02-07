@@ -4,10 +4,11 @@
 print(somma2(1,2))'''
 
 #utilizzare la funzione precedente per scirivere una funzione che faci la somma di tre numeri interi
-'print(somma2(somma2(1,2),3))
+'print(somma2(somma2(1,2),3))'
 #scrivere una funzione prodotto  chiamata prodotto che facci il prodotto di due numeri inseriti dall'utente usando la funzione somma usata precedentemente
 '''def prodotto(a,b):
     x=a 
+    c=b
     if b <0:
        c= b*-1
     for i in range(c-1):
@@ -17,7 +18,9 @@ print(somma2(1,2))'''
     return x
 print(prodotto(int(input("")),int(input(""))))'''
 #scrivere la funzione MCD che calcola il massimo comun divisore tra due numeri 
-
+def MCD(a,b)
+   while v=True:
+        
 #mcm minimo comune multiplo
 
 #scrivere una funizone chhiamata semplifica che semplifica una frazione

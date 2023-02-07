@@ -1,4 +1,4 @@
-#scrivi una funzione che prende due mnumeri come parametro e manda in print il più grande dei due
+#scrivi una funzione che prende due numeri come parametro e manda in print il più grande dei due
 def maggiore(a=0,b=0):
     if a>b:
         max=a

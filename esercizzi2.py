@@ -18,8 +18,12 @@ print(somma2(1,2))'''
     return x
 print(prodotto(int(input("")),int(input(""))))'''
 #scrivere la funzione MCD che calcola il massimo comun divisore tra due numeri 
-def MCD(a,b)
-   while v=True:
+def MCD(a,b):
+    for i in range(1,int(b/2)):
+        if a%i == 0 and b%i == 0:
+            n=i
+    return n
+print(MCD(47,22))
         
 #mcm minimo comune multiplo
 

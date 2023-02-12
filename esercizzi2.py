@@ -23,14 +23,39 @@ def MCD(a,b):
         if a%i == 0 and b%i == 0:
             n=i
     return n
-print(MCD(47,22))
+#print(MCD(47,22))
         
 #mcm minimo comune multiplo
+def mcm(a,b):
+    m1=a
+    m2=b
+    while a !=b:
+        if a<b:
+            a=a+m1
+        else:
+            b=b+m2
+    return a
+#print(mcm(25,15))
 
 #scrivere una funizone chhiamata semplifica che semplifica una frazione
-
+def semplifica(a,b):
+    m=MCD(a,b)
+    a=a/m
+    b=b/m
+    return a,b
+#print(semplifica(10,20))
 #scrivere una funzione che permetta di fare la somma tra due frazioni dando il risultato semplificato
-
+def sommaF(a,aa,b,bb):
+    den=mcm(aa,bb)
+    a=a*(den/aa)
+    b=b*(den/bb)
+    a=a+bb
+    return semplifica(a,den)
+#print(sommaF(5,20,25,50))
 #scrivere una funzione che permetta di fare il prodotto tra due frazioni dando il risultato semplificato
-
+def moltF(a,aa,b,bb):
+    a=a*b
+    aa=aa*bb
+    return semplifica(a,aa)
+print(moltF(5,20,25,50))
 #scrivere una funzione che permetta di fare la divisione tra due frazioni dando il risultato semplificato

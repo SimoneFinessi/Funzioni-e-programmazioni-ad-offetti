@@ -35,7 +35,7 @@ def mcm(a,b):
         else:
             b=b+m2
     return a
-#print(mcm(25,15))
+#print(mcm(2,4))
 
 #scrivere una funizone chhiamata semplifica che semplifica una frazione
 def semplifica(a,b):
@@ -49,13 +49,13 @@ def sommaF(a,aa,b,bb):
     den=mcm(aa,bb)
     a=a*(den/aa)
     b=b*(den/bb)
-    a=a+bb
+    a=a+b
     return semplifica(a,den)
-#print(sommaF(5,20,25,50))
+print(sommaF(1,2,3,4))
 #scrivere una funzione che permetta di fare il prodotto tra due frazioni dando il risultato semplificato
 def moltF(a,aa,b,bb):
     a=a*b
     aa=aa*bb
     return semplifica(a,aa)
-print(moltF(5,20,25,50))
+#print(moltF(5,20,25,50))
 #scrivere una funzione che permetta di fare la divisione tra due frazioni dando il risultato semplificato

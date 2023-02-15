@@ -1,6 +1,6 @@
 def controllo(a=""):
     global x
-    if a=="Dante" or a=="Manzoni":
+    if (a=="Dante" and x==2) or (a=="Manzoni"and x==1):
         print("corretto")
         print("bravo")
     else:
@@ -16,7 +16,3 @@ controllo(risposta1)
 risposta2=input("chi ha scritto la divina commedia?:")
 x=2
 controllo(risposta2)
-
-
-
-        

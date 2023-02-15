@@ -1,3 +1,4 @@
+
 def controllo(a=""):
     global x
     if (a=="Dante" and x==2) or (a=="Manzoni"and x==1):

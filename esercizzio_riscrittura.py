@@ -16,3 +16,16 @@ controllo(risposta1)
 risposta2=input("chi ha scritto la divina commedia?:")
 x=2
 controllo(risposta2)
+#-----------------------------------------------------------------------------------------------------------
+def controllo(a,b):
+    if a==b:
+        print("corretto")
+        print("bravo")
+    else:
+        print("la risposta é ",b)
+        print("studia di più")
+
+risposta1=input("chi ha scritto i promessi sposi?:")
+controllo(risposta1,"Manzoni")
+risposta2=input("chi ha scritto la divina commedia?:")
+controllo(risposta2,"Dante")
